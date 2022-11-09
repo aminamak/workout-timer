@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Lato);  
+ body {  
+  font-family: 'Lato', Arial, sans-serif;  
+  font-size: 16px;  
+  display: flex;  
+  align-items: center;  
+  justify-content: center;  
+  height: 100vh;  
+  margin: 0;  
+  padding: 0; 
+  background-color: rgb(176, 197, 190); 
+  
+ }  
+ /* Layout */  
+ .container {  
+ }  
+ .main-title {  
+  padding-bottom: 40px;  
+  text-align: center;  
+  font-size: 2.5em;  
+ }  
+ .timer-settings-container {  
+  display: flex;  
+  flex-wrap: wrap;  
+  padding-bottom: 30px;  
+ }  
+ .timer-main-container {  
+  text-align: center;  
+  padding-bottom: 10px;  
+  font-size: 3em;  
+ }  
+ .timer-description {  
+  text-align: center;  
+  padding-bottom: 40px  
+ }  
+ .pomodoro-title, .break-title, .pomodoro-container, .break-container {  
+  width: 50%;  
+ }  
+ .pomodoro-title, .break-title {  
+  font-size: 1em;  
+  text-transform: uppercase;  
+  letter-spacing: calc(1em / 10);  
+  text-align: center;  
+ }  
+ .pomodoro-container, .break-container {  
+  display: flex;  
+  align-items: center;  
+  padding-top: 10px;  
+  font-size: 1.5em;  
+  justify-content: center;  
+ }  
+ .break-timer, .pomodoro-timer {  
+  padding: 0 20px;  
+ }  
+ .controls-container {  
+  text-align: center; 
+ } 
+  button {
+   margin: 0 10px;  
+   font-size: 1.125em;  
+  }
+  button:first-child {  
+   margin-left: 0;  
+  }  
+  button:last-child {  
+   margin-right: 0;  
+  }  
+  
+ /* Button styling */  
+ button {  
+  background-color: lighten(lightslategray, 30%);  
+  border: none;  
+  padding: 20px;  
+  font-size: 1em;  
+   
+   background-color: lighten(lightslategray, 40%);  
+   cursor: pointer;  
+   
+}
+ button:disabled {  
+  background-color: rgb(243, 209, 209);  
+ }  
+ button:disabled:hover {  
+  background-color: rgb(183, 206, 101);  
+  cursor: not-allowed;  
+ }  
+ .button-start {  
+  background-color: mediumseagreen;  
+   
+   background-color: lighten(mediumseagreen, 20%);  
+  }  
+  
+ .button-pause {  
+  background-color:rgb(121, 109, 221);  
+   
+   background-color: lighten(rgb(149, 235, 146), 40%);  
+  
+ }  
+ .button-reset {  
+  background-color: cornflowerblue;  
+   
+   background-color: lighten(cornflowerblue, 20%);  
+   
+ }  
+ /* Icon styling */  
+ .controls-container .fa {  
+  padding-left: 5px;  
+ }  
