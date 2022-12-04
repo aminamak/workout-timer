@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="timer.css">
     <title>Workout Timer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">  
-        <div class="main-title">Workout Timer</div>  
+    <div class="container"> 
+        <div id="gradient">
+        <div class="main-title">Workout-Timer</div>  
         <div class="timer-settings-container">  
          <div class="pomodoro-title">Work</div>  
          <div class="break-title">Break</div>  
          <div class="pomodoro-container">  
-          <button aria-label="Decrease Pomodoro timer length" class="decrementPomodoroTimer" onclick="decrementPomodoroTimer()"><i class="fa fa-minus"></i></button>  
+          <button aria-label="Decrease Pomodoro timer length" class="decrementPomodoroTimer" onclick="decrementPomodoroTimer()"><i class="fa fa-minus">-</i></button>  
           <div class="pomodoro-timer"></div>  
-          <button aria-label="Increase Pomodoro timer length" class="incrementPomodoroTimer" onclick="incrementPomodoroTimer()"><i class="fa fa-plus"></i></button>  
+          <button aria-label="Increase Pomodoro timer length" class="incrementPomodoroTimer" onclick="incrementPomodoroTimer()"><i class="fa fa-plus">+</i></button>  
          </div>  
          <div class="break-container">  
-          <button aria-label="Decrease break timer length" class="decrementBreakTimer" onclick="decrementBreakTimer()"><i class="fa fa-minus"></i></button>  
+          <button aria-label="Decrease break timer length" class="decrementBreakTimer" onclick="decrementBreakTimer()"><i class="fa fa-minus">-</i></button>  
           <div class="break-timer"></div>  
-          <button aria-label="Increase break timer length" class="incrementBreakTimer" onclick="incrementBreakTimer()"><i class="fa fa-plus"></i></button>  
+          <button aria-label="Increase break timer length" class="incrementBreakTimer" onclick="incrementBreakTimer()"><i class="fa fa-plus">+</i></button>  
          </div>  
         </div>  
         <div class="timer-main-container">  
@@ -32,6 +34,7 @@
          <button class="button-pause" onclick="pauseTimer()">Pause <i class="fa fa-pause"></i></button>  
          <button class="button-reset" onclick="resetTimer()">Reset <i class="fa fa-refresh"></i></button>  
         </div>  
+       </div>
        </div> 
        <script src="timer.js"></script> 
 </body>
